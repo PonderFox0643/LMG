@@ -1,0 +1,20 @@
+name: lmsg
+version: '${project.version}'
+main: com.pf43.LMGPlugin
+api-version: 1.17
+description: 一个基于Bukkit API的留言插件
+commands:
+  lmsg:
+    description: 留言命令
+    usage: /lmsg <留言内容>
+  listmsg:
+    description: 查看留言命令
+    usage: /listmsg [页码]
+  adminmsg:
+    description: 管理员留言命令
+    usage: /adminmsg <list|deny|allow|remove> [参数]
+permissions:
+  lmgplugin.admin:
+    description: 允许管理员执行所有留言相关命令
+    default: op
+    
